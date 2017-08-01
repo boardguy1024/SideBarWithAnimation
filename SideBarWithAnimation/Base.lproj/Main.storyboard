@@ -45,9 +45,75 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsL-cw-P47">
                                 <rect key="frame" x="0.0" y="0.0" width="80" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="yGm-Su-jJb">
+                                        <rect key="frame" x="15" y="50" width="50" height="567"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jf9-UT-WgU">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="zhj-ty-4hd" customClass="UIImageViewX" customModule="SideBarWithAnimation" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="GhQ-R8-N8D"/>
+                                                    <constraint firstAttribute="height" constant="50" id="aEF-8G-g8R"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-xd-Hia">
+                                                <rect key="frame" x="10" y="100" width="30" height="467"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWI-IB-qZd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="23"/>
+                                                        <state key="normal" image="camera"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjd-ik-sRM">
+                                                        <rect key="frame" x="0.0" y="89" width="30" height="22.5"/>
+                                                        <state key="normal" image="file"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-1g-MFm">
+                                                        <rect key="frame" x="0.0" y="177.5" width="30" height="23"/>
+                                                        <state key="normal" image="play"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBX-uA-Chh">
+                                                        <rect key="frame" x="0.0" y="266.5" width="30" height="23"/>
+                                                        <state key="normal" image="search"/>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BGG-mY-G4F">
+                                                        <rect key="frame" x="0.0" y="355.5" width="30" height="22.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OZ-GE-ZOw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="22.5"/>
+                                                                <state key="normal" image="shopping"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X4-bc-Foq">
+                                                        <rect key="frame" x="0.0" y="444" width="30" height="23"/>
+                                                        <state key="normal" image="menu2"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Nvb-xd-Hia" firstAttribute="leading" secondItem="yGm-Su-jJb" secondAttribute="leading" constant="10" id="nTB-ou-1yN"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nvb-xd-Hia" secondAttribute="trailing" constant="10" id="wIU-oe-z6e"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="yGm-Su-jJb" firstAttribute="leading" secondItem="TsL-cw-P47" secondAttribute="leading" constant="15" id="Hs4-ha-iVS"/>
                                     <constraint firstAttribute="width" constant="80" id="cIa-aj-fU5"/>
+                                    <constraint firstAttribute="bottom" secondItem="yGm-Su-jJb" secondAttribute="bottom" constant="50" id="nWz-lj-BHC"/>
+                                    <constraint firstAttribute="trailing" secondItem="yGm-Su-jJb" secondAttribute="trailing" constant="15" id="q2F-qT-Rzf"/>
+                                    <constraint firstItem="yGm-Su-jJb" firstAttribute="top" secondItem="TsL-cw-P47" secondAttribute="top" constant="50" id="uWe-c0-p3O"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -86,6 +152,12 @@
     </scenes>
     <resources>
         <image name="background" width="744" height="1392"/>
+        <image name="camera" width="88" height="68"/>
+        <image name="file" width="95" height="77"/>
         <image name="menu2" width="70" height="70"/>
+        <image name="play" width="43" height="45"/>
+        <image name="profile2" width="588" height="592"/>
+        <image name="search" width="44" height="44"/>
+        <image name="shopping" width="64" height="88"/>
     </resources>
 </document>

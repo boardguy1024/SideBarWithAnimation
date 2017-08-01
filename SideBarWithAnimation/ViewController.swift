@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var sideBarView: UIView!
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var screenCoverButton: UIButton!
@@ -19,31 +19,32 @@ class ViewController: UIViewController {
         sideBarView.alpha = 0
         screenCoverButton.alpha = 0
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     @IBAction func menuButtonTappd(_ sender: Any) {
-        
-        UIView.animate(withDuration: 0.5) {
-            
-            self.screenCoverButton.alpha = 0.8
-            self.sideBarView.alpha = 1
-            
-        }
+        hideMenu()
         
     }
-
     @IBAction func screenCoverButtonTapped(_ sender: Any) {
-        
+        showMenu()
+    }
+    
+    func showMenu() {
         UIView.animate(withDuration: 0.5) {
-            
             self.screenCoverButton.alpha = 0
             self.sideBarView.alpha = 0
-            
         }
     }
-
+    func hideMenu() {
+        UIView.animate(withDuration: 0.5) {
+            self.screenCoverButton.alpha = 0.8
+            self.sideBarView.alpha = 1
+        }
+    }
+    
+    
 }
 
