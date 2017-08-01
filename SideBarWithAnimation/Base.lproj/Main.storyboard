@@ -43,9 +43,16 @@
                                     <action selector="screenCoverButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vFM-mV-47S"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsL-cw-P47">
+                            <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="TsL-cw-P47">
                                 <rect key="frame" x="0.0" y="0.0" width="80" height="667"/>
                                 <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="side" translatesAutoresizingMaskIntoConstraints="NO" id="ovR-CJ-gW0">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="667"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="138" id="BRI-05-vqs"/>
+                                        </constraints>
+                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="yGm-Su-jJb">
                                         <rect key="frame" x="15" y="50" width="50" height="567"/>
                                         <subviews>
@@ -107,8 +114,11 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ovR-CJ-gW0" secondAttribute="bottom" id="3mw-qL-viP"/>
+                                    <constraint firstItem="ovR-CJ-gW0" firstAttribute="leading" secondItem="TsL-cw-P47" secondAttribute="leading" id="5aG-Cg-100"/>
+                                    <constraint firstItem="ovR-CJ-gW0" firstAttribute="top" secondItem="TsL-cw-P47" secondAttribute="top" id="G66-IF-qgi"/>
                                     <constraint firstItem="yGm-Su-jJb" firstAttribute="leading" secondItem="TsL-cw-P47" secondAttribute="leading" constant="15" id="Hs4-ha-iVS"/>
                                     <constraint firstAttribute="width" constant="80" id="cIa-aj-fU5"/>
                                     <constraint firstAttribute="bottom" secondItem="yGm-Su-jJb" secondAttribute="bottom" constant="50" id="nWz-lj-BHC"/>
@@ -139,6 +149,7 @@
                     </view>
                     <connections>
                         <outlet property="menuButton" destination="Jvk-bS-QcX" id="0Xx-vU-SXh"/>
+                        <outlet property="menuCurveImageView" destination="ovR-CJ-gW0" id="pMj-jl-CXK"/>
                         <outlet property="screenCoverButton" destination="Fqt-y4-53S" id="AX9-UX-GVJ"/>
                         <outlet property="sideBarView" destination="TsL-cw-P47" id="n7S-tB-scl"/>
                     </connections>
@@ -159,5 +170,6 @@
         <image name="profile2" width="588" height="592"/>
         <image name="search" width="44" height="44"/>
         <image name="shopping" width="64" height="88"/>
+        <image name="side" width="160" height="824"/>
     </resources>
 </document>
