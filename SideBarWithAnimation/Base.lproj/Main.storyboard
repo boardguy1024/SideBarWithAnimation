@@ -73,36 +73,36 @@
                                                     <constraint firstAttribute="height" constant="50" id="aEF-8G-g8R"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-xd-Hia">
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-xd-Hia">
                                                 <rect key="frame" x="10" y="100" width="30" height="467"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWI-IB-qZd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="27"/>
                                                         <state key="normal" image="camera"/>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjd-ik-sRM">
-                                                        <rect key="frame" x="0.0" y="89" width="30" height="22.5"/>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjd-ik-sRM">
+                                                        <rect key="frame" x="0.0" y="88" width="30" height="27"/>
                                                         <state key="normal" image="file"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-1g-MFm">
-                                                        <rect key="frame" x="0.0" y="177.5" width="30" height="23"/>
+                                                        <rect key="frame" x="0.0" y="176" width="30" height="27"/>
                                                         <state key="normal" image="play"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBX-uA-Chh">
-                                                        <rect key="frame" x="0.0" y="266.5" width="30" height="23"/>
+                                                        <rect key="frame" x="0.0" y="264" width="30" height="27"/>
                                                         <state key="normal" image="search"/>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BGG-mY-G4F">
-                                                        <rect key="frame" x="0.0" y="355.5" width="30" height="22.5"/>
+                                                        <rect key="frame" x="0.0" y="352" width="30" height="27"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OZ-GE-ZOw">
-                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="22.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="27"/>
                                                                 <state key="normal" image="shopping"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X4-bc-Foq">
-                                                        <rect key="frame" x="0.0" y="444" width="30" height="23"/>
+                                                        <rect key="frame" x="0.0" y="440" width="30" height="27"/>
                                                         <state key="normal" image="menu2"/>
                                                     </button>
                                                 </subviews>
@@ -148,9 +148,16 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="EWI-IB-qZd" id="7mK-GX-ZRu"/>
+                        <outlet property="fileButton" destination="Fjd-ik-sRM" id="1aG-Nl-sa1"/>
                         <outlet property="menuButton" destination="Jvk-bS-QcX" id="0Xx-vU-SXh"/>
                         <outlet property="menuCurveImageView" destination="ovR-CJ-gW0" id="pMj-jl-CXK"/>
+                        <outlet property="playButton" destination="aXC-1g-MFm" id="kr7-0Q-EL1"/>
+                        <outlet property="profileImageView" destination="zhj-ty-4hd" id="9KY-Jd-urf"/>
                         <outlet property="screenCoverButton" destination="Fqt-y4-53S" id="AX9-UX-GVJ"/>
+                        <outlet property="searchButton" destination="MBX-uA-Chh" id="tmS-UZ-DZy"/>
+                        <outlet property="settingButton" destination="5X4-bc-Foq" id="lG2-Jj-8Ks"/>
+                        <outlet property="shoppingButton" destination="BGG-mY-G4F" id="HdC-ws-KMf"/>
                         <outlet property="sideBarView" destination="TsL-cw-P47" id="n7S-tB-scl"/>
                     </connections>
                 </viewController>
