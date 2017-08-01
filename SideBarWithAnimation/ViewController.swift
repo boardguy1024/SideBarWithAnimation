@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         menuCurveImageView.image = #imageLiteral(resourceName: "side")
-        menuCurveImageView.tintColor = .yellow
+        menuCurveImageView.tintColor = .white
         sideBarView.alpha = 0
         screenCoverButton.alpha = 0
     }
@@ -79,17 +79,17 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.3, delay: 0.2, options: [.curveEaseOut, .allowUserInteraction], animations: {
             self.fileButton.transform = CGAffineTransform(translationX: -self.sideBarView.frame.width, y: 0)
             self.searchButton.transform = CGAffineTransform(translationX: -self.sideBarView.frame.width, y: 0)
+            self.menuCurveImageView.transform = CGAffineTransform(translationX: -self.menuCurveImageView.frame.width, y: 0)
+            self.sideBarView.alpha = 0
         })
         UIView.animate(withDuration: 0.4, delay: 0.3, options: [.curveEaseOut, .allowUserInteraction], animations: {
             self.fileButton.transform = CGAffineTransform(translationX: -self.sideBarView.frame.width, y: 0)
             self.searchButton.transform = CGAffineTransform(translationX: -self.sideBarView.frame.width, y: 0)
-            self.sideBarView.alpha = 0
-
         })
         UIView.animate(withDuration: 0.3, delay: 0.4, options: [.curveEaseOut, .allowUserInteraction], animations: {
             self.playButton.transform = CGAffineTransform(translationX: -self.sideBarView.frame.width, y: 0)
             //隠す時はwidth分マイナス方向に配置しておく
-            self.menuCurveImageView.transform = CGAffineTransform(translationX: -self.menuCurveImageView.frame.width, y: 0)
+            
         })
         
         
