@@ -74,36 +74,59 @@
                                                     <constraint firstAttribute="height" constant="50" id="aEF-8G-g8R"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-xd-Hia">
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-xd-Hia">
                                                 <rect key="frame" x="10" y="100" width="30" height="467"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWI-IB-qZd">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="PBn-8s-JNx"/>
+                                                            <constraint firstAttribute="height" constant="27" id="aPr-Ph-gPP"/>
+                                                        </constraints>
                                                         <state key="normal" image="camera"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjd-ik-sRM">
-                                                        <rect key="frame" x="0.0" y="88" width="30" height="27"/>
+                                                        <rect key="frame" x="0.0" y="83" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="72Z-vj-lFH"/>
+                                                            <constraint firstAttribute="width" constant="30" id="lp3-Om-uJK"/>
+                                                        </constraints>
                                                         <state key="normal" image="file"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-1g-MFm">
-                                                        <rect key="frame" x="0.0" y="176" width="30" height="27"/>
+                                                        <rect key="frame" x="0.0" y="169" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="tbA-1q-Ih7"/>
+                                                        </constraints>
                                                         <state key="normal" image="play"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBX-uA-Chh">
-                                                        <rect key="frame" x="0.0" y="264" width="30" height="27"/>
+                                                        <rect key="frame" x="0.0" y="255" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="4Cj-OU-Obc"/>
+                                                            <constraint firstAttribute="height" constant="30" id="mga-nE-aDx"/>
+                                                        </constraints>
                                                         <state key="normal" image="search"/>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BGG-mY-G4F">
-                                                        <rect key="frame" x="0.0" y="352" width="30" height="27"/>
+                                                        <rect key="frame" x="0.0" y="341" width="30" height="40"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OZ-GE-ZOw">
-                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="27"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="e7Y-O0-NuU"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="uGM-kk-YWC"/>
+                                                                </constraints>
                                                                 <state key="normal" image="shopping"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X4-bc-Foq">
-                                                        <rect key="frame" x="0.0" y="440" width="30" height="27"/>
+                                                        <rect key="frame" x="0.0" y="437" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="B2p-ki-d3d"/>
+                                                            <constraint firstAttribute="width" constant="30" id="TDJ-08-3KP"/>
+                                                        </constraints>
                                                         <state key="normal" image="menu2"/>
                                                     </button>
                                                 </subviews>
@@ -143,10 +166,6 @@
                             <constraint firstItem="AzX-bT-ujY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mLH-5X-znv"/>
                             <constraint firstItem="TsL-cw-P47" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pjl-Du-SIk"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="pNA-L2-CiV" appends="YES" id="KQe-mU-JGT"/>
-                            <outletCollection property="gestureRecognizers" destination="pqP-7Q-Tvg" appends="YES" id="Skv-ZR-R5c"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="cameraButton" destination="EWI-IB-qZd" id="7mK-GX-ZRu"/>
@@ -163,8 +182,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="pNA-L2-CiV"/>
-                <tapGestureRecognizer id="pqP-7Q-Tvg"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
